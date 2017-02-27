@@ -10,11 +10,11 @@ RUN apk update \
   && rm -rf /var/cache/apk/* \
   && /bin/bash \
   && touch ~/.bashrc \
-  && curl -o- -L https://yarnpkg.com/install.sh | bash \
+  && curl -o- -L https://yarnpkg.com/install.sh | bash 
 #  && apk add python2 py2-pip -qq \
 #  && pip install awscli \
-  && apk del curl tar binutils 
 RUN apk add python py-pip -qq 
+RUN apk del curl tar binutils 
 #RUN apk add --no-cache make gcc g++ 
 #RUN apk add python py-pip zip -qq
 #RUN pip install awscli
