@@ -16,4 +16,4 @@ RUN apk update \
 RUN apk add --no-cache python py-pip -qq \
   && pip install awscli
 RUN apk del curl tar binutils 
-#RUN apk add --no-cache make gcc g++ python
+RUN apk add --no-cache make gcc g++
