@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:base-6
+FROM mhart/alpine-node:base
 # FROM mhart/alpine-node:6
 
 MAINTAINER Eteng omini <eteng@busyunit.com>
